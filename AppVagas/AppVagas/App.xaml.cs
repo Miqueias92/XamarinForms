@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppVagas.Pagina;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,7 @@ namespace AppVagas
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new ConsultarVagas());
         }
 
         protected override void OnStart()
